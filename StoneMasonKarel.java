@@ -16,6 +16,13 @@ public class StoneMasonKarel extends SuperKarel {
 	//support the walls of the Quad in various worlds.
 	
 	public void run() {
+		fillColumn();
+		if (frontIsClear()) {
+			moveALot(4);
+		}
+
+
+	private void fillColumn() {
 		verifyBeeperPresence();
 		while (notFacingNorth()){
 			turnLeft();
@@ -27,12 +34,8 @@ public class StoneMasonKarel extends SuperKarel {
 		turnAround();
 		moveToWall();
 		turnLeft();
-		if (frontIsClear()) {
-			moveALot(4);
-		}
-		
 	}
-
+		
 	private void verifyBeeperPresence() {
 		if (noBeepersPresent()) {
 			putBeeper();
