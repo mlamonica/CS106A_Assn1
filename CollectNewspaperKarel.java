@@ -32,13 +32,13 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void turnRight() {
-		for (int i = 0; i < 3; i+=1) {   //can also use i++ to increment i 
+		for (int i = 0; i < 3; i+=1) {   //can also use i++ to increment i by 1
 			turnLeft();
 		}
 	}
 	
 	private void turnAround() {
-		for (int i = 0; i < 4; i+=2) {
+		for (int i = 0; i < 4; i+=2) { //illustrating loop with i incremented by 2; alternatively can use same syntax as turnRight method
 			turnLeft();
 		}
 	}
