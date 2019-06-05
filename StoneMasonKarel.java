@@ -24,7 +24,10 @@ public class StoneMasonKarel extends SuperKarel {
 				move();
 				verifyBeeperPresence();
 			}
-			
+			turnAround();
+			moveToWall();
+			turnLeft();
+			moveALot(4);
 		}
 		
 	}
