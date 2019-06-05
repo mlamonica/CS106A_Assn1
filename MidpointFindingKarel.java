@@ -14,7 +14,10 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
-		int i = 1; 
+		int counter = 1; 
+		if (frontIsClear()) {
+			
+		}
 	}
 
 }
