@@ -21,36 +21,34 @@ public class StoneMasonKarel extends SuperKarel {
 			moveALot(4);
 		}
 
-
-	private void fillColumn() {
-		verifyBeeperPresence();
-		while (notFacingNorth()){
+		private void fillColumn() {
+			verifyBeeperPresence();
+			while (notFacingNorth()){
+				turnLeft();
+			}
+			while (frontIsClear()) {
+				move();
+				verifyBeeperPresence();
+			}
+			turnAround();
+			moveToWall();
 			turnLeft();
 		}
-		while (frontIsClear()) {
-			move();
-			verifyBeeperPresence();
-		}
-		turnAround();
-		moveToWall();
-		turnLeft();
-	}
-		
-	private void verifyBeeperPresence() {
-		if (noBeepersPresent()) {
-			putBeeper();
-		}
-	}
-	
-	private void moveToWall() {
-		while (frontIsClear())
-			move();
-	}
-	
-	private void moveALot(int numSteps) {
-		for (int i = 0; i < numSteps; i++) {
-			move();
+			
+		private void verifyBeeperPresence() {
+			if (noBeepersPresent()) {
+				putBeeper();
+			}
 		}
 		
+		private void moveToWall() {
+			while (frontIsClear())
+				move();
+		}
+		
+		private void moveALot(int numSteps) {
+			for (int i = 0; i < numSteps; i++) {
+				move();
+			}
+		}
 	}
-}
