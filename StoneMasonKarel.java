@@ -44,6 +44,10 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 	}
 	
-	private void moveALot(numSteps
+	private void moveALot(int numSteps) {
+		for (int i = 0; i < numSteps; i++) {
+			move();
+		}
+		
 	}
 }
