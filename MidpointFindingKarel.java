@@ -15,22 +15,31 @@ import stanford.karel.*;
 @SuppressWarnings("serial")
 public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
-		int counter = 1; //Karel is going to count as he moves fwd
+		//Karel will keep track of the number of moves he does fwd
+		int counter = 1; 
 		while (frontIsClear()) {
 			move();
 			counter = counter + 1;
 		}
-		if (counter % 2 == 0) { //if there is an even # of columns
+		//if Karel finds an even number of columns in the world, 
+		//then he will adjust the midpoint by 0.5 to find one of
+		//the two central corners as described in the intro
+		if (counter % 2 == 0) {
 			int even_midpoint = counter/2 + (1/2);
 			turnAround();
+			//Karel will move backward to the calculated midpoint
 			for (int i = 0; i < even_midpoint; i++) {
 				move();
 			}
+			//Karel will place a beeper at the midpoint
 			putBeeper();
+			//Karel will move back to his starting place
 			while (frontIsClear()) {
 				move();
 			}
 		} 
+			//if the # of columns is odd, Karel can find the true
+			//midpoint and place the beeper accordingly
 			else {
 				int odd_midpoint = counter/2;
 				turnAround();
