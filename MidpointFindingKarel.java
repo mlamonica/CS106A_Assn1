@@ -12,6 +12,7 @@
 
 import stanford.karel.*;
 
+@SuppressWarnings("serial")
 public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
 		int counter = 1; 
@@ -29,6 +30,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			while (frontIsClear()) {
 				move();
 			}
+		} 
 			else {
 				int odd_midpoint = counter/2;
 				turnAround();
@@ -39,10 +41,6 @@ public class MidpointFindingKarel extends SuperKarel {
 				while (frontIsClear()) {
 					move();
 				}
-				
 			}
-		}	
-	}
+		}
 }
-
-
