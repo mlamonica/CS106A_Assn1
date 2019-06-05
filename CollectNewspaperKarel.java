@@ -1,7 +1,7 @@
 /*
  * File: CollectNewspaperKarel.java
  * --------------------------------
- *Karel walks to walk to the door of its house, picks up the
+ * Karel walks to walk to the door of its house, picks up the
  * newspaper (represented by a beeper, of course), and then returns
  * to its initial position in the upper left corner of its house.
  */
