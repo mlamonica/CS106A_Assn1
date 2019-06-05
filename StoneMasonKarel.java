@@ -17,9 +17,12 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	public void run() {
 		fillColumn();
-		if (frontIsClear()) {
+		while (frontIsClear()) {
 			moveALot(4);
+			fillColumn();
+			
 		}
+		
 	}
 
 		private void fillColumn() {
