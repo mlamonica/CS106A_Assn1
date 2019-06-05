@@ -24,19 +24,21 @@ public class CollectNewspaperKarel extends Karel {
 		move();
 		turnRight();
 	}
-	
+	//allows Karel to turn right
 	private void turnRight() {
 		for (int i = 0; i < 3; i+=1) {   //can also use i++ to increment i by 1
 			turnLeft();
 		}
 	}
 	
+	//allows Karel to turn around
 	private void turnAround() {
 		for (int i = 0; i < 4; i+=2) { //illustrating loop with i incremented by 2; alternatively can use same syntax as turnRight method
 			turnLeft();
 		}
 	}
 	
+	//allows Karel to move more than one step at a time
 	private void moveALot(int numSteps) {
 		for (int i = 0; i < numSteps; i++) {
 			move();
