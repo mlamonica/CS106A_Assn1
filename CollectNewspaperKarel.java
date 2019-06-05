@@ -32,7 +32,7 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void turnRight() {
-		for int i = 
+		for int i = 0; i < 3; i+=1 //also could use i++
 	}
 	
 	private void turnAround() {
