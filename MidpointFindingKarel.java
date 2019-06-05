@@ -19,6 +19,10 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 			counter = counter + 1;
 		}
+		if (counterIsOdd()) {
+			midpoint =
+			
+		}
 	}
 }
 
