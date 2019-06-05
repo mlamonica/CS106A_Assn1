@@ -11,7 +11,7 @@
 import stanford.karel.*;
 
 @SuppressWarnings("serial")
-public class CollectNewspaperKarel  Karel {
+public class CollectNewspaperKarel extends Karel {
 	
 	
 	public void run() {
