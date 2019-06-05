@@ -1,7 +1,7 @@
 /*
  * File: MidpointFindingKarel.java
  * -------------------------------
- * When you finish writing it, the MidpointFindingKarel class should
+ * The MidpointFindingKarel class should
  * leave a beeper on the corner closest to the center of 1st Street
  * (or either of the two central corners if 1st Street has an even
  * number of corners).  Karel can put down additional beepers as it
@@ -13,7 +13,8 @@
 import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
-
-	// You fill in this part
+	public void run() {
+		int i = 1; 
+	}
 
 }
