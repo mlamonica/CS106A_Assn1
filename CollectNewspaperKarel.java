@@ -38,7 +38,7 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void turnAround() {
-		for (int i = 0; i < 1; i+=2) {
+		for (int i = 0; i < 4; i+=2) {
 			turnLeft();
 		}
 	}
