@@ -12,7 +12,11 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	// Karel will place beepers to support the walls of the Quad in various worlds.
+	// Karel will place beepers every 4 steps to 
+	//support the walls of the Quad in various worlds.
 	
+	public void run() {
+		
+	}
 
 }
