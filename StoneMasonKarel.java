@@ -20,6 +20,7 @@ public class StoneMasonKarel extends SuperKarel {
 		if (frontIsClear()) {
 			moveALot(4);
 		}
+	}
 
 		private void fillColumn() {
 			verifyBeeperPresence();
@@ -51,4 +52,3 @@ public class StoneMasonKarel extends SuperKarel {
 				move();
 			}
 		}
-	}
