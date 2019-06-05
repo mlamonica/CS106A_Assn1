@@ -10,6 +10,7 @@
 
 import stanford.karel.*;
 
+@SuppressWarnings("serial")
 public class CollectNewspaperKarel extends Karel {
 	
 	// You fill in this part
