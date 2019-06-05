@@ -17,10 +17,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		int counter = 1; 
 		while (frontIsClear()) {
 			move();
-			incrementCounter();
+			counter = counter + 1;
 			
 		}
-private void incrementCounter() {
-	int counter = counter + 1; 
-}
-
