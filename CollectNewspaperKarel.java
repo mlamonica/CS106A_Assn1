@@ -13,7 +13,6 @@ import stanford.karel.*;
 @SuppressWarnings("serial")
 public class CollectNewspaperKarel extends Karel {
 	
-	
 	public void run() {
 		moveALot(2);
 		turnRight();
