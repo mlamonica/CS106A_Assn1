@@ -16,7 +16,7 @@ public class StoneMasonKarel extends SuperKarel {
 	//support the walls of the Quad in various worlds.
 	
 	public void run() {
-		if (beepersPresent) {
+		if (beepersPresent()) {
 			
 		}
 		
