@@ -20,17 +20,29 @@ public class MidpointFindingKarel extends SuperKarel {
 			counter = counter + 1;
 		}
 		if (counter % 2 == 0) {
-			int midpoint = counter/2 + (1/2);
+			int even_midpoint = counter/2 + (1/2);
 			turnAround();
-			for (i = 0; i < midpoint; i++) {
+			for (int i = 0; i < even_midpoint; i++) {
 				move();
 			}
 			putBeeper();
 			while (frontIsClear()) {
 				move();
 			}
-			
-		}
+			else {
+				int odd_midpoint = counter/2;
+				turnAround();
+				for (int i = 0; i < odd_midpoint; i++) {
+					move();
+				}
+				putBeeper();
+				while (frontIsClear()) {
+					move();
+				}
+				
+			}
+		}	
 	}
 }
+
 
