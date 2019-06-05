@@ -18,6 +18,8 @@ public class MidpointFindingKarel extends SuperKarel {
 		if (frontIsBlocked()) {
 			putBeeper();
 			else {
+				move();
+				counter = counter + 1;
 				
 			}
 		}
