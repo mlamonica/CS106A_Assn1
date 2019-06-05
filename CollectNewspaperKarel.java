@@ -43,4 +43,6 @@ public class CollectNewspaperKarel extends Karel {
 			turnLeft();
 		}
 	}
+	
+	private void moveALot(int n)
 }
