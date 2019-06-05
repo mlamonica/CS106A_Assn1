@@ -19,7 +19,8 @@ public class StoneMasonKarel extends SuperKarel {
 			fillColumn();
 		}
 	}
-
+		//Karel will fill whichever column he is in with beepers
+		//until he hits the wall of the quad
 		private void fillColumn() {
 			verifyBeeperPresence();
 			while (notFacingNorth()){
