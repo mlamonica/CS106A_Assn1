@@ -15,16 +15,13 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
 		int counter = 1; 
-		if (frontIsBlocked()) {
-			putBeeper();
+		while (frontIsClear()) {
+			move();
+			incrementCounter();
+			
 		}
-			else {
-				while (frontIsClear()) {
-					move();
-					counter = counter + 1;
-				}
-			}
-	}
+private void incrementCounter() {
+	int counter = counter + 1; 
+	return counter
 }
-
 
