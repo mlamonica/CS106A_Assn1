@@ -16,17 +16,14 @@ public class CollectNewspaperKarel extends Karel {
 	// You fill in this part
 	
 	public void run() {
-		move();
-		move();
+		moveALot(2);
 		turnRight();
 		move();
 		turnLeft();
 		move();
 		pickBeeper();
 		turnAround();
-		move();
-		move();
-		move();
+		moveALot(3);
 		turnRight();
 		move();
 		turnRight();
@@ -44,5 +41,9 @@ public class CollectNewspaperKarel extends Karel {
 		}
 	}
 	
-	private void moveALot(int n)
+	private void moveALot(int numSteps) {
+		for (int i = 0; i < numSteps; i++) {
+			move();
+		}
+	}
 }
