@@ -18,5 +18,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (frontIsClear()) {
 			move();
 			counter = counter + 1;
-			
 		}
+	}
+}
+
