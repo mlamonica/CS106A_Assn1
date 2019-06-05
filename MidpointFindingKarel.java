@@ -15,12 +15,12 @@ import stanford.karel.*;
 @SuppressWarnings("serial")
 public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
-		int counter = 1; 
+		int counter = 1; //Karel is going to count as he moves fwd
 		while (frontIsClear()) {
 			move();
 			counter = counter + 1;
 		}
-		if (counter % 2 == 0) {
+		if (counter % 2 == 0) { //if there is an even # of columns
 			int even_midpoint = counter/2 + (1/2);
 			turnAround();
 			for (int i = 0; i < even_midpoint; i++) {
