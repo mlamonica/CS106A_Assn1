@@ -17,13 +17,14 @@ public class MidpointFindingKarel extends SuperKarel {
 		int counter = 1; 
 		if (frontIsBlocked()) {
 			putBeeper();
+		}
 			else {
-				move();
-				counter = counter + 1;
-				
+				while (frontIsClear()) {
+					move();
+					counter = counter + 1;
+				}
 			}
-		}
-			
-		}
 	}
+}
+
 
