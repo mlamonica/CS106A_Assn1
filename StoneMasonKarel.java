@@ -1,8 +1,8 @@
 /*
  * File: StoneMasonKarel.java
  * --------------------------
- * This program should solves the "repair the quad"
- * problem from Assignment 1.
+ * This program solves the "repair the quad"
+ * problem from Stanford's CS106A Assignment 1.
  */
 
 import stanford.karel.*;
