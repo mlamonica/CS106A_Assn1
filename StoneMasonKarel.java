@@ -20,14 +20,14 @@ public class StoneMasonKarel extends SuperKarel {
 		while (notFacingNorth()){
 			turnLeft();
 		}
-			while (frontIsClear()) {
-				move();
-				verifyBeeperPresence();
-			}
-			turnAround();
-			moveToWall();
-			turnLeft();
-			if (rightIsClear()) {
+		while (frontIsClear()) {
+			move();
+			verifyBeeperPresence();
+		}
+		turnAround();
+		moveToWall();
+		turnLeft();
+		if (frontIsClear()) {
 			moveALot(4);
 		}
 		
