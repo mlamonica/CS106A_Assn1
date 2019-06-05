@@ -22,6 +22,5 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 private void incrementCounter() {
 	int counter = counter + 1; 
-	return counter
 }
 
