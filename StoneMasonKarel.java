@@ -22,7 +22,8 @@ public class StoneMasonKarel extends SuperKarel {
 		//Karel will start at the bottom of
 		//his world, fill whichever column he is in with beepers
 		//until he hits quad wall, and then will turn around and
-		//return to the bottom of the world
+		//return to the bottom of the column, ready to move to 
+		//the next column
 		private void fillColumn() {
 			verifyBeeperPresence();
 			while (notFacingNorth()){
